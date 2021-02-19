@@ -49,8 +49,7 @@ app.layout=html.Div(
                   ]),
         dcc.Graph(id='map',figure=fig,style={'float':'left','width':'50%'},hoverData={'points':[{'location':'Gujarat'}]}),
         dcc.Graph(id='bar',figure=bar,style={'float':'right','width':'49%'})
-        #dash_table.DataTable(id='table',data=table_df.to_dict('records'),columns=[{'name':x,'id':x} for x in ['city','station','pollutant_avg']])
-        ])
+          ])
 
 @app.callback(
     Output('map','figure'),
